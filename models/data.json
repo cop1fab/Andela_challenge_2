@@ -1,7 +1,7 @@
 [
   {
-    "Parcel Id": "1",
-    "User Id": "1",
+    "ParcelId": "99f26ae6-afb3-47cc-93fe-b37eb4d8a25b",
+    "UserId": "1",
     "weight": "20",
     "location": "Kinamba",
     "Destination": "Karongi",
@@ -10,8 +10,8 @@
     "Status": "Delivered"
   },
   {
-    "Parcel Id": "2",
-    "User Id": "2",
+    "ParcelId": "8e5c6765-57d5-4d4f-b159-c826c52dca69",
+    "UserId": "2",
     "weight": "34",
     "location": "Kisimenti",
     "Destination": "Huye",
@@ -20,8 +20,8 @@
     "Status": "Yet to be Delivered"
   },
   {
-    "Parcel Id": "3",
-    "User Id": "2",
+    "ParcelId": "60e59c8-94e2-414a-9aa8-e00358faea35",
+    "UserId": "2",
     "weight": "56",
     "location": "Gikondo",
     "Destination": "Nyamagabe",
@@ -30,8 +30,8 @@
     "Status": "Yet to be Delivered"
   },
   {
-    "Parcel Id": "4",
-    "User Id": "2",
+    "ParcelId": "eebb8a5f-64b1-473f-adbf-f6b770d97e5b",
+    "UserId": "2",
     "weight": "12",
     "location": "Kimironko",
     "Destination": "Muhanga",
@@ -40,8 +40,8 @@
     "Status": "Delivered"
   },
   {
-    "Parcel Id": "5",
-    "User Id": "3",
+    "ParcelId": "8195249f-e4b3-4a89-bea3-0d876a5d8c32",
+    "UserId": "3",
     "weight": "200",
     "location": "Gacuriro",
     "Destination": "Rubavu",
