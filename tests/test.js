@@ -34,3 +34,15 @@ describe('/GET parcels by Id', () => {
       });
   });
 });
+
+describe('GET parcels by user Id', () => {
+  const id = 1;
+  it('it shoud GET all parcels by UserId', () => {
+    chai.request(server)
+      .get(`/users/:${id}/parcels`)
+      .end((err, res) => {
+        should.not.exist(err);
+        res.body.should.be.a('object');
+      });
+  });
+});
