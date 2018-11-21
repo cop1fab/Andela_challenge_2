@@ -29,10 +29,6 @@ describe('/GET parcels', () => {
       .get(`/api/v1/parcels/:${id}`)
       .end((err, res) => {
         should.not.exist(err);
-        //chai.expect(err).to.not.exist;
-        // res.should.have.status('200');
-
-        //res.body.should.have.property('id');
         res.body.should.be.a('object');
 
       done();
