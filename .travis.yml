@@ -2,8 +2,11 @@ language: node_js
 node_js:
   - "8"
 before-install: 
-   
 
+before_script:
+   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 cache: npm
 script: npm test
 after_success:
