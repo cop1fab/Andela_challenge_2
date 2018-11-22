@@ -16,7 +16,7 @@ const getParcelsByUserId = (userId) => {
   });
   return tempParcels;
 };
-const putParcelsById = (parcelId) => {
+const cancelParcelsById = (parcelId) => {
   let tempIndex;
   allParcels.forEach((value, index) => {
     if (value.ParcelId === parcelId) {
@@ -39,6 +39,6 @@ export default allParcels;
 export {
   getParcelById,
   getParcelsByUserId,
-  putParcelsById,
+  cancelParcelsById,
   postParcels,
 };
