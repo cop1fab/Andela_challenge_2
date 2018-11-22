@@ -1,0 +1,53 @@
+[
+  {
+    "parcelId": "99f26ae6-afb3-47cc-93fe-b37eb4d8a25b",
+    "userId": "1",
+    "weight": "20",
+    "location": "Kinamba",
+    "destination": "Karongi",
+    "description": "Must be wrapped",
+    "price": "20,000",
+    "status": "Delivered"
+  },
+  {
+    "parcelId": "8e5c6765-57d5-4d4f-b159-c826c52dca69",
+    "userId": "2",
+    "weight": "34",
+    "location": "Kisimenti",
+    "destination": "Huye",
+    "description": "only one box",
+    "price": "4800",
+    "status": "Yet to be Delivered"
+  },
+  {
+    "parcelId": "60e59c8-94e2-414a-9aa8-e00358faea35",
+    "userId": "2",
+    "weight": "56",
+    "location": "Gikondo",
+    "destination": "Nyamagabe",
+    "description": "Eggs! Handle with care",
+    "price": "75000",
+    "status": "Yet to be Delivered"
+  },
+  {
+    "parcelId": "eebb8a5f-64b1-473f-adbf-f6b770d97e5b",
+    "userId": "2",
+    "weight": "12",
+    "location": "Kimironko",
+    "destination": "Muhanga",
+    "description": "Clothes",
+    "price": "67000",
+    "status": "Delivered"
+  },
+  {
+    "parcelId": "8195249f-e4b3-4a89-bea3-0d876a5d8c32",
+    "userId": "3",
+    "weight": "200",
+    "location": "Gacuriro",
+    "destination": "Rubavu",
+    "description": "Tomatoes",
+    "price": "100000",
+    "status": "Yet to be Delivered"
+  }
+]
+
