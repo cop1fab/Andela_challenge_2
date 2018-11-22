@@ -7,6 +7,7 @@ const getParcelById = (parcelId) => {
   const parcel = allParcels.find(p => p.ParcelId === Number.parseInt(parcelId, 10));
   return parcel;
 };
+
 const getParcelsByUserId = (userId) => {
   const tempParcels = [];
   allParcels.forEach((parcel) => {
@@ -16,6 +17,7 @@ const getParcelsByUserId = (userId) => {
   });
   return tempParcels;
 };
+
 const cancelParcelsById = (parcelId) => {
   let tempIndex;
   allParcels.forEach((value, index) => {
@@ -26,6 +28,7 @@ const cancelParcelsById = (parcelId) => {
   allParcels.splice(tempIndex, 1);
   return allParcels;
 };
+
 const uniqueId = () => uuid.v4();
 
 const postParcels = (body) => {
@@ -34,7 +37,7 @@ const postParcels = (body) => {
   return allParcels;
 };
 
-export default allParcels;
+// export default allParcels;
 
 export {
   getParcelById,

@@ -1,5 +1,6 @@
 import Express from 'express';
-import allParcels, {
+import allParcels from './models/data.json';
+import {
   getParcelById, getParcelsByUserId, cancelParcelsById, postParcels,
 } from './models/datastructure';
 
