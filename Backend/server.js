@@ -12,12 +12,12 @@ const appVersion = '/api/v1';
 // Endpoint to get a list of all parcels
 
 server.get(`${appVersion}/parcels`, (req, res) => {
-  res.json(allParcels);
+  res.status(200).json(allParcels);
 });
 
 // Endpoint to get 1 parcel by parcel id
 
-server.get(`${appVersion}/parcels/:parid`, (req, res) => {
+server.get(`${appVersion}/parcels/:parcelId`, (req, res) => {
   const temParcel = getParcelById(Number.parseInt(req.params.parcelId, 10));
   if (!temParcel) {
     res.status(204).send();
@@ -28,8 +28,8 @@ server.get(`${appVersion}/parcels/:parid`, (req, res) => {
 
 // Endpoint to get all parcels by user id
 
-server.get(`${appVersion}/users/:usid/parcels`, (req, res) => {
-  const tempParcels = getParcelsByUserId(Number.parseInt(req.params.usid, 10));
+server.get(`${appVersion}/users/:userId/parcels`, (req, res) => {
+  const tempParcels = getParcelsByUserId(Number.parseInt(req.params.userId, 10));
   if (!tempParcels.length) {
     res.status(400).send('No user registered');
   } else {
@@ -40,8 +40,8 @@ server.get(`${appVersion}/users/:usid/parcels`, (req, res) => {
 // Endpoint to cancel parcel by parcel id
 
 server.put(`${appVersion}/parcels/:parid/cancel`, (req, res) => {
-  const tempIndex = cancelParcelsById(Number.parseInt(req.params.parid, 10));
-  res.status.apply(200).json(tempIndex);
+  const tempIndex = cancelParcelsById(Number.parseInt(req.params.parcelId, 10));
+  res.status(200).json(tempIndex);
 });
 
 // Endpoint to create a parcel
