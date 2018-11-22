@@ -18,11 +18,11 @@ server.get(`${appVersion}/parcels`, (req, res) => {
 // Endpoint to get 1 parcel by parcel id
 
 server.get(`${appVersion}/parcels/:parid`, (req, res) => {
-  const temparcel = getParcelById(Number.parseInt(req.params.parid, 10));
-  if (!temparcel) {
+  const temParcel = getParcelById(Number.parseInt(req.params.parcelId, 10));
+  if (!temParcel) {
     res.status(204).send();
   } else {
-    res.status(200).json(temparcel);
+    res.status(200).json(temParcel);
   }
 });
 
