@@ -1,8 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import chai from 'chai';
 
 import chaiHttp from 'chai-http';
 import server from '../server';
-import allParcels from '../models/datastructure';
+// import allParcels from '../models/datastructure';
 
 const should = chai.should();
 

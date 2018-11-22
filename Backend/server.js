@@ -43,4 +43,4 @@ server.post(`${appVersion}/parcels`, (req, res) => {
 const port = process.env.PORT || 3200;
 server.listen(port, () => console.log('server started successfuly'));
 
-module.exports = server;
+export default server;
