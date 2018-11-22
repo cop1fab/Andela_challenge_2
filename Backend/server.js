@@ -40,14 +40,14 @@ server.get(`${appVersion}/users/:usid/parcels`, (req, res) => {
 
 server.put(`${appVersion}/parcels/:parid/cancel`, (req, res) => {
   const tempIndex = cancelParcelsById(Number.parseInt(req.params.parid, 10));
-  res.json(tempIndex);
+  res.status.apply(200).json(tempIndex);
 });
 
 // Endpoint to create a parcel
 
 server.post(`${appVersion}/parcels`, (req, res) => {
   const createParcel = postParcels(req.body);
-  res.json(createParcel);
+  res.status(200).json(createParcel);
 });
 
 // eslint-disable-next-line no-console
