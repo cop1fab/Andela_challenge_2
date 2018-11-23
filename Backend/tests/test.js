@@ -3,7 +3,7 @@ import chai from 'chai';
 
 import chaiHttp from 'chai-http';
 import server from '../server';
-// import allParcels from '../models/datastructure';
+import allParcels from '../models/data.json';
 
 const should = chai.should();
 
@@ -17,6 +17,15 @@ describe('/GET parcels', () => {
       .end((err, res) => {
         should.not.exist(err);
         res.should.have.status(200);
+        res.body.length.should.be.eql(allParcels.length);
+        const receivedParcels = res.body;
+        receivedParcels[0].parcelId.should.be.eql(allParcels[0].parcelId);
+        receivedParcels[0].userId.should.be.eql(allParcels[0].userId);
+        receivedParcels[0].weight.should.be.eql(allParcels[0].weight);
+        receivedParcels[0].location.should.be.eql(allParcels[0].location);
+        receivedParcels[0].destination.should.be.eql(allParcels[0].destination);
+        receivedParcels[0].price.should.be.eql(allParcels[0].price);
+        receivedParcels[0].status.should.be.eql(allParcels[0].status);
         res.body.should.be.a('array');
         done();
       });
