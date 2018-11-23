@@ -51,7 +51,7 @@ server.post(`${appVersion}/parcels`, (req, res) => {
   res.status(200).json(createParcel);
 });
 
-const port = process.env.PORT || 8888;
+const port = process.env.PORT || 8882;
 // eslint-disable-next-line no-console
 server.listen(port, () => console.log('server started successfuly'));
 
