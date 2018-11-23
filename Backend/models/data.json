@@ -48,6 +48,17 @@
     "description": "Tomatoes",
     "price": "100000",
     "status": "Yet to be Delivered"
+  },
+  {
+    "parcelId": "1",
+    "userId": "3",
+    "weight": "200",
+    "location": "Gacuriro",
+    "destination": "Rubavu",
+    "description": "Tomatoes",
+    "price": "100000",
+    "status": "Yet to be Delivered"
   }
 ]
+
 

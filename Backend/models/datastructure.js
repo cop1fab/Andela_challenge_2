@@ -4,7 +4,8 @@ import allParcels from './data.json';
 
 
 const getParcelById = (parcelId) => {
-  const parcel = allParcels.find(p => p.ParcelId === Number.parseInt(parcelId, 10));
+  const parcel = allParcels.find(p => p.parcelId === parcelId);
+  // console.log(allParcels);
   return parcel;
 };
 

@@ -18,7 +18,7 @@ server.get(`${appVersion}/parcels`, (req, res) => {
 // Endpoint to get 1 parcel by parcel id
 
 server.get(`${appVersion}/parcels/:parcelId`, (req, res) => {
-  const temParcel = getParcelById(Number.parseInt(req.params.parcelId, 10));
+  const temParcel = getParcelById(req.params.parcelId);
   if (!temParcel) {
     res.status(204).send();
   } else {
@@ -51,7 +51,7 @@ server.post(`${appVersion}/parcels`, (req, res) => {
   res.status(200).json(createParcel);
 });
 
-const port = process.env.PORT || 3200;
+const port = process.env.PORT || 8888;
 // eslint-disable-next-line no-console
 server.listen(port, () => console.log('server started successfuly'));
 
