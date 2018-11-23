@@ -20,7 +20,7 @@ server.get(`${appVersion}/parcels`, (req, res) => {
 server.get(`${appVersion}/parcels/:parcelId`, (req, res) => {
   const temParcel = getParcelById(Number.parseInt(req.params.parcelId, 10));
   if (!temParcel) {
-    res.status(204).send();
+    res.status(204).json({ message: 'no match' });
   } else {
     res.status(200).json(temParcel);
   }

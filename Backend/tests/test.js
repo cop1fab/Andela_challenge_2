@@ -57,23 +57,35 @@ describe('GET parcels by user Id', () => {
       });
   });
 });
-// describe('PUT parcels by user Id', () => {
-//   const id = 1;
-//   it('it should delete parcel by id', () => {
-//     chai.request(server);
-//     it.should.get(allParcels)
-//       .end((err, res) => {
-//         chai.request(server);
-//           .delete(`parcels/:${id}/cancel`)
-//           .end((err, res) => {
-//           res.should.have.status('200');
-//           res.should.be.a('json');
-//           res.body.should.be.a('object');
-//           response.body.should.have.property('REMOVED');
-//           response.body.REMOVED.should.be.a('object');
-//           done();
-//         })
-//     })
 
+// describe('/POST parcels', () => {
+//   it('it should POT a new tempParcel', (done) => {
+//     const tempParcel = {
+//       userId: '4',
+//       weight: '30',
+//       location: 'Kinamba',
+//       destination: 'Karongi',
+//       description: 'Oranges',
+//       price: '35000',
+//       status: 'yet to be delivered',
+//     };
+//     chai.request(server)
+//       .post('/api/v1/post/parcels')
+//       .send(tempParcel)
+//       .end((err, res) => {
+//         // should.not.exist(err);
+//         // console.log(res);
+//         res.should.have.status(200);
+//         res.should.be.a('array');
+//         // console.log(res);
+//         res.body.should.have.property('userId').eql('4');
+//         res.body.should.have.property('weight').eql('30');
+//         res.body.should.have.property('location').eql('Kinamba');
+//         res.body.should.have.property('destination').eql('Karongi');
+//         res.body.should.have.property('price').eql('35000');
+//         res.body.should.have.property('status').eql('yet to be delivered');
+//         // const tempParcel = res.body;
+//         done();
+//       });
 //   });
 // });
