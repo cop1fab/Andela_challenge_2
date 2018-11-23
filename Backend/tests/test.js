@@ -57,23 +57,3 @@ describe('GET parcels by user Id', () => {
       });
   });
 });
-// describe('PUT parcels by user Id', () => {
-//   const id = 1;
-//   it('it should delete parcel by id', () => {
-//     chai.request(server);
-//     it.should.get(allParcels)
-//       .end((err, res) => {
-//         chai.request(server);
-//           .delete(`parcels/:${id}/cancel`)
-//           .end((err, res) => {
-//           res.should.have.status('200');
-//           res.should.be.a('json');
-//           res.body.should.be.a('object');
-//           response.body.should.have.property('REMOVED');
-//           response.body.REMOVED.should.be.a('object');
-//           done();
-//         })
-//     })
-
-//   });
-// });
