@@ -1,56 +1,578 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Send It</title>
-	<link href="../css/style.css" rel="stylesheet"/>
-</head>
-<body>
-	<!-- Section -->
-	<section>
-		<div class="top mainc">
-			<div class="full">
-				<div class="half">
-						<a href="home.html">
-					<img src="../images/logo.png" height="100">
-					</a>
-				</div>
-				<div class="half">
-					<ul>
-						<li><a href="home.html">Home</a></li>
-						<li><a href="login.html">Sign in/up</a></li>
-						<li><a href="admin.html">Admin</a></li>
-						<li><a href= "user.html">user</a></li>
-					</ul>
-				</div>
-				<div class="clear"></div>
-			</div>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>user</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+        <style>
+          /*START GENERAL CSS FOR BACKEND*/
+          @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css";
+          @import url(//fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic);
+          * {
+            font-family: Lato;
+          }
+          body {
+            font-size: 16px;
+            background: #f3f3f3;
+            margin: 1px 0px 0px 0px;
+          }
+          h1, h2, h3, h4, h5, h6 {
+            letter-spacing: -0.035em;
+            margin: 0px 0px 10px 0px;
+          }
+          h1 {
+            font-size: 2.5em;
+          }
+          h2 {
+            font-size: 1.8em;
+          }
+          h3 {
+            font-size: 1.5em;
+          }
+          img, p, a {
+            margin: 0px;
+          }
+          a {
+            color: #f44236;
+            text-decoration: none;
+          }
+          a:hover,
+          a:focus,
+          a:active {
+            color: #f44236 !important;
+          }
+          button {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            margin: 0px;
+            background: #f3f3f3;
+            border: 1px solid rgba(0, 0, 0, .12);
+            border-radius: 5px;
+          }
+          button:hover {
+            cursor: pointer;
+          }
+          button.delete {
+            color: #f44236;
+          }
+          .header-content,
+          .body-content,
+          .footer-content {
+            height: auto;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0px 15px;
+          }
+          .header-section {
+            background: #fff;
+            border-bottom: 1px solid rgba(0, 0, 0, .12);
+            height: auto;
+            padding: 18px 0px;
+          }
+          .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .platform-logo {
+            width: auto;
+            max-width: 250px;
+            height: auto;
+            max-height: 50px;
+          }
+          .header-nav .nav-icon {
+            color: #414141;
+            font-size: 1.5em;
+            margin: 0px 8px;
+          }
+          .header-nav .nav-icon:hover {
+            color: #f44236;
+          }
+          .body-root {
+            min-height: 85.3vh;
+          }
+          .body-section {
+            padding: 25px 0px;
+          }
+          .body-content {
+            display: flex;
+          }
+          .sidebar {
+            width: 27%;
+            min-width: 200px;
+            height: auto;
+          }
+          .main {
+            width: 73%;
+            height: auto;
+          }
+          .sidebar-menu {
+            display: flex;
+            flex-direction: column;
+            padding-top: 5px;
+          }
+          .sidebar-menu .menu-item {
+            color: #414141;
+            font-size: 1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            width: auto;
+            max-width: 180px;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+          }
+          .sidebar-menu .menu-icon {
+            font-size: 1.2em;
+            text-align: center;
+            width: 35px;
+            margin-right: 12px;
+          }
+          .main-container {
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, .12);
+            border-radius: 5px;
+            padding: 25px 30px;
+            margin-bottom: 15px;
+          }
+          .footer-section {
+            background: #fff;
+            border-top: 1px solid rgba(0, 0, 0, .12);
+            height: auto;
+            padding: 20px 0px;
+          }
+          .footer-container.msh-power {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .footer-container.msh-power p {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            padding-right: 7px;
+          }
+          .msh-logo {
+            width: auto;
+            max-width: 150px;
+          }
+          @media (max-width: 480px) {
+            h1 {
+              font-size: 2em;
+            }
+            h2 {
+              font-size: 1.6em;
+            }
+            h3 {
+              font-size: 1.3em;
+            }
+            button {
+              font-size: 0.9em;
+            }
+            .header-content {
+              justify-content: center;
+            }
+            .platform-logo {
+              max-width: 225px;
+            }
+            .header-nav {
+              display: none;
+            }
+            .body-root {
+              min-height: 74.5vh;
+            }
+            .body-section {
+              padding: 15px 0px;
+            }
+            .body-content {
+              flex-direction: column;
+            }
+            .sidebar {
+              width: 100%;
+            }
+            .main {
+              width: 100%;
+            }
+            .sidebar-menu {
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              padding-bottom: 2px;
+            }
+            .sidebar-menu .menu-item {
+              width: 48%;
+              margin-bottom: 15px;
+            }
+            .sidebar-menu .menu-icon {
+              margin-right: 6px;
+            }
+            .main-container {
+              padding: 15px 20px;
+              margin: 0px -16px 15px;
+              border-radius: 0px;
+            }
+          }
+          /*END GENERAL CSS FOR BACKEND*/
+          /*START CSS FOR EDIT USER PAGE*/
+          .user-overview-block {
+            display: flex;
+            align-items: center;
+            padding: 10px 0px 22px 0px;
+          }
+          .user-image-subcontainer {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+          }
+          .user-image {
+            height: 100%;
+            width: auto;
+            max-width: none;
+          }
+          .user-details {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .detail-column {
+            display: table;
+          }
+          .detail-row {
+            display: table-row;
+          }
+          .detail-row > div {
+            display: table-cell;
+            padding: 4px 5px;
+          }
+          .detail-column.column-1 {
+            margin-right: 10px;
+          }
+          .detail-question {
+            font-size: 0.9em;
+            color: #a1a1a1;
+            text-transform: uppercase;
+            text-align: right;
+            min-width: 110px;
+          }
+          .user-badge {
+            font-size: 0.6em;
+            text-transform: uppercase;
+            margin-right: 3px;
+            color: white;
+            padding: 3px 5px;
+            border-radius: 3px;
+          }
+          .user-badge.admin {
+            background: #0FA2F1;
+          }
+          .user-badge.pro {
+            background: black;
+          }
+          .user-badge.mod {
+            background: #18CD15;
+          }
+          .edit-user-actions {
+            display: flex;
+          }
+          .edit-user-actions button {
+            padding: 8px 12px;
+            margin-right: 5px;
+          }
+          .posts-block {
+            padding-top: 5px;
+            margin-bottom: -12px;
+          }
+          .single-post {
+            display: flex;
+            border: 1px solid rgba(0, 0, 0, .12);
+            border-radius: 5px;
+            padding: 10px 20px 10px 10px;
+            margin-bottom: 12px;
+          }
+          .post-thumbnail-container {
+            width: 100%;
+            max-width: 200px;
+            height: 100%;
+            max-height: 112px;
+            overflow: hidden;
+          }
+          .post-thumbnail {
+            max-width: 100%;
+            max-height: 100%;
+          }
+          .post-details {
+            width: 100%;
+            padding: 10px 15px;
+          }
+          .post-type {
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+          }
+          .single-post.image .post-type {
+            color: #4286f4;
+          }
+          .single-post.video .post-type {
+            color: #f39606;
+          }
+          .single-post.blog .post-type {
+            color: #f44236;
+          }
+          .single-post.podcast .post-type {
+            color: #18cd15;
+          }
+          .post-title {
+            font-size: 1.2em;
+            font-weight: 700;
+            letter-spacing: -0.035em;
+          }
+          .post-actions {
+            margin: auto 0;
+            text-align: center;
+          }
+          .posts-block button.delete {
+            margin-top: 5px;
+          }
+          .comments-block {
+            padding-top: 5px;
+            margin-bottom: -10px;
+          }
+          .single-comment {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(0, 0, 0, .12);
+            border-radius: 5px;
+            padding: 12px 20px;
+            margin-bottom: 10px;
+          }
+          .comment-details {
+            width: 100%;
+            padding-right: 10px;
+          }
+          .comment-post {
+            font-size: 1.2em;
+            font-weight: 700;
+          }
+          .comment-text {
+            font-style: italic;
+            padding: 7px 0px;
+          }
+          .comment-timestamp {
+            color: #a1a1a1;
+            font-size: 0.8em;
+          }
+          @media (max-width: 480px) {
+            .edit-user-actions {
+              flex-wrap: wrap;
+            }
+            .edit-user-actions button {
+              margin-bottom: 5px;
+            }
+            .single-post {
+              flex-direction: column;
+              padding: 10px;
+            }
+            .post-thumbnail-container {
+              max-width: none;
+              max-height: none;
+            }
+            .post-details {
+              width: auto;
+              padding: 8px 5px 15px;
+            }
+            .post-type {
+              padding-bottom: 2px;
+            }
+            .post-actions {
+              display: flex;
+            }
+            .posts-block button.delete {
+              margin: 0px 0px 0px 5px;
+            }
+          }
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
 
-			<div class="full center">
-				<div class="half">
-						<div class="form login_form">
-								<img src="../images/user.png" width="100">
-								<p>
-									Names: Buhungiro Caleb<br>
-									Email: caleb@gmail.com<br>
-									User Id: 08
-								</p>
-							</div>
-				</div>
-				<div class="half">
-					<div class="form login_form user">
-						<button>New parcel order</button><br>
-						<button>All my orders</button><br>
-						<button>Edit my order</button><br>
-						<button>Cancel my order</button>
-						
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
+          td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+          }
 
-	</section>
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+          /*END CSS FOR EDIT USER PAGE*/
+        </style>
+      </head>
+      <body>
+        <div class="backend-root">
+          <header>
+            <div class="header-section">
+              <div class="header-content">
+                <div class="header-container logo">
+                  <img src="./images/logo black.png" class="platform-logo">
+                </div>
+                <div class="header-container header-nav">
+                  <a href="#"><i class="fas fa-question-circle nav-icon"></i></a>
+                  <a href="#"><i class="fas fa-bell nav-icon"></i></a>
+                  <a href="#"><i class="fas fa-user-circle nav-icon"></i></a>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="body-root">
+            <div class="body-section">
+              <div class="body-content">
+                <div class="sidebar">
+                  <div class="sidebar-content">
+                    <div class="sidebar-container sidebar-menu">
+                      <a href="#" class="menu-item"><i class="fas fa-home menu-icon"></i>Dashboard</a>
+                      <a href="#" class="menu-item"><i class="fas fa-bolt menu-icon"></i>Create a parcel</a>
+                      <a href="#" class="menu-item"><i class="fas fa-folder menu-icon"></i>View all Parcels</a>
+                      <a href="#" class="menu-item"><i class="fas fa-comments menu-icon"></i>Where is my parcels?</a>
+                      <a href="#" class="menu-item"><i class="fas fa-trophy menu-icon"></i>FAQ</a>
+                      <a href="#" class="menu-item"><i class="fas fa-tag menu-icon"></i>Privacy policy</a>
+                      <a href="#" class="menu-item"><i class="fas fa-chart-area menu-icon"></i>Terms & conditions</a>
+                      <a href="#" class="menu-item"><i class="fas fa-cog menu-icon"></i>Settings</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="main">
+                  <div class="main-content">
+                    <div class="main-container user-overview">
+                      <h2>User details</h2>
+                      <div class="user-overview-block">
+                        <div class="user-image-container">
+                          <div class="user-image-subcontainer">
+                            <img src="./images/user.png" class="user-image">
+                          </div>
+                        </div>
+                        <div class="user-details">
+                          <div class="detail-column column-1">
+                            <div class="detail-row username">
+                              <div class="detail-question">Username</div>
+                              <div class="detail-answer">calebug</div>
+                            </div>
+                            <div class="detail-row fullname">
+                              <div class="detail-question">Full Name</div>
+                              <div class="detail-answer">Caleb Bugingo</div>
+                            </div>
+                            <div class="detail-row email">
+                              <div class="detail-question">Email</div>
+                              <div class="detail-answer">caleb@gmail.com</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="edit-user-actions">
+                        <div class="button-container">
+                          <button class="make-user-pro">Create a parcel</button>
+                        </div>
+                        <div class="button-container">
+                          <button class="make-user-pro">Cancel my Parcel</button>
+                        </div>
+                        <div class="button-container">
+                          <button class="make-user-troll">My preference</button>
+                        </div>
+                        <div class="button-container">
+                          <button class="delete">logout</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="main-container latest-posts">
+                      <h2>All my parcels</h2>
+                      <div class="posts-block">
+                        <div class="single-post image">
+                          <div class="post-details">
+                            <table class="table">
+                                <tr>
+                                  <th>Parcel ID</th>
+                                  <th>Weight</th>
+                                  <th>Status</th>
+                                </tr>
+                                <tr>
+                                  <td>000937889</td>
+                                  <td>350</td>
+                                  <td>Deliverd</td>
+                                </tr>
+                            </table>
+                          </div>
+                          <div class="post-actions">
+                            <div class="button-container">
+                              <button class="edit-post">Edit</button>
+                            </div>
+                            <div class="button-container">
+                              <button class="delete">Cancel</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="posts-block">
+                            <div class="single-post image">
+                              <div class="post-details">
+                                <table class="table">
+                                    <tr>
+                                      <th>Parcel ID</th>
+                                      <th>Weight</th>
+                                      <th>Status</th>
+                                    </tr>
+                                    <tr>
+                                      <td>008497948</td>
+                                      <td>400</td>
+                                      <td>Yet to be Deliverd</td>
+                                    </tr>
+                                </table>
+                              </div>
+                              <div class="post-actions">
+                                <div class="button-container">
+                                  <button class="edit-post">Edit</button>
+                                </div>
+                                <div class="button-container">
+                                  <button class="delete">Cancel</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="posts-block">
+                                <div class="single-post image">
+                                  <div class="post-details">
+                                    <table class="table">
+                                        <tr>
+                                          <th>Parcel ID</th>
+                                          <th>Weight</th>
+                                          <th>Status</th>
+                                        </tr>
+                                        <tr>
+                                          <td>000937948</td>
+                                          <td>200</td>
+                                          <td>Deliverd</td>
+                                        </tr>
+                                    </table>
+                                  </div>
+                                  <div class="post-actions">
+                                    <div class="button-container">
+                                      <button class="edit-post">Edit</button>
+                                    </div>
+                                    <div class="button-container">
+                                      <button class="delete">Cancel</button>
+                                    </div>
+                                  </div>
+                                </div>
 
-
+          <footer>
+            <div class="footer-section">
+              <div class="footer-content">
+                <div class="footer-container msh-power">
+                  <p>Made in Rwanda</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
 </body>
 </html>

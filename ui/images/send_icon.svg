@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="110px" height="101px" viewBox="0 0 110 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Send icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage-hybrid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Pricing-List-2-Copy-2" transform="translate(-711.000000, -1095.000000)" stroke-width="3">
+            <g id="Group-2" transform="translate(713.000000, 1096.000000)">
+                <g id="Send-icon" transform="translate(0.000000, 1.000000)">
+                    <polyline id="Stroke-1" stroke="#F5A623" points="70.776395 63.2627438 52.2778001 45.3445809 33.7792051 63.2604882"></polyline>
+                    <path d="M91.2087868,0.250222662 L14.9228936,0.250222662 L0.251195504,28.8264206 L7.00318266,79.8487462 C8.33045684,89.6097397 16.7681285,96.9709055 26.6301919,96.9709055 L79.5038009,96.9709055 C89.363552,96.9709055 97.8012236,89.6097397 99.1284978,79.8418169 L105.882797,28.8264206 L91.2087868,0.250222662 Z" id="Stroke-2" stroke="#15537D"></path>
+                    <path d="M105.092907,28.9488372 L1.03831072,28.9488372" id="Stroke-4" stroke="#15537D"></path>
+                    <path d="M51.6226415,0.899723701 L51.6226415,28.6166955" id="Stroke-6" stroke="#15537D"></path>
+                    <path d="M51.6226415,46.3008164 L51.6226415,80.9470312" id="Stroke-8" stroke="#F5A623"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

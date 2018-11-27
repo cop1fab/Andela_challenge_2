@@ -1,181 +1,226 @@
-div{
-min-height:100%;
+/* 
+  This the Eric Meyer tool to reset all tag properties, 
+  It helps to reduce browser inconsistencies in things 
+  like default line heights, margins and font sizes 
+  of headings, and so on
+  http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-	.mainc {
-	background: #92f799;	
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-.top {
-	padding: 10px;
+body {
+	line-height: 1;
 }
-.top ul {
-	float: right;
-	margin-right: 30px;
-}
-.top li {
-	display: inline-block;
+ol, ul {
 	list-style: none;
-	padding: 0 20px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of the Eric Meyer Tool */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
 }
 
-.top a {
-	text-decoration: none;
-	color:white;
-}
-.green{
-	background: green;
-}
-.full {
-	width:100%;
+.header,
+.footer {
+  background: #1b1e25 repeat;
+  color: #fff;
 }
 
+.middle {
+  background: #fff;
+}
+.hero {
+  background: #333 url(../images/Radisson-Blue-Kigali-bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 465px;
+  opacity: .9;
+}
+.logo {
+  float: left;
+  margin: 19px 17px 0 0;
+}
+.slogan {
+  float: left;
+  margin-top: 22px;
+  font: italic 32px "Times New Roman", Times, Georgia, serif;
+  color: rgba(255, 255, 255, 0.966);
+}
+.nav {
+  float: right;
+}
+.nav li {
+  float: left;
+  border-left: 1px solid #2c323d;
+}
+.nav a {
+  display: block;
+  line-height: 62px;
+  padding: 0 24px 0 53px;
+  color: #fff;
+  margin-top: 8px;
+  margin-left: -5px;
+  line-height: 60px;
+}
+.i{
+  margin: 0px 15px;
+
+}
+.nav a:hover {
+  background-color: blue;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
+  color: #55606e;
+}
 .half {
-	float: left;
+	float: right;
 	width: 50%;
-	color: white;
+  color: white;
 }
 
 .half p {
 	font-size: 1.5em;
 	padding: 30px;
-	width: 450px;
-
-}
-
-.half input {
-	width: 90%;
-}
-
-.full textarea {
-	width: 100%
-}
-
-.full input[type ='submit'] {
-	width: initial;
-	display: block;
-	margin: 10px auto;
-}
-.quarter {
-	width: 25%;
-	float: left;
-}
-
-.quarter h4 {
-	padding-left: 40px;
-}
-
-.quarter p {
-	padding-left: 30px;
-}
-
-.quarter input {
-	width: 200px;
-}
-.padding {
-	padding: 10px;
-}
-
-.clear {
-	clear: both;
-}
-
-.top {
-	/* background: #000;
-	opacity: .7; */
-	background-image: url(../images/Radisson-Blue-Kigali.jpg);
-	 background-repeat: no-repeat;
-	 background-size: cover;
-		background-position: 0%;
+	width: 400px;
 }
 .form {
 	padding: 30px;
 	background: #000;
-	border-radius: 5px;
-	margin: 30px;
+	border-radius: 30px;
+	margin: 50px;
 	opacity: .9;
-	color:white;
+  color:white;
+  width: 87%;
+  margin-left: 3px;
 }
 .form h4 {
 	text-align: center;
 }
 .form input {
 	margin-bottom: 5px;
-	margin-top: 5px;
-	padding: 5px;
-	background-color: white;
+	margin-top: 8px;
+  background-color: white;
+  width: 90%;
+  padding: 18px 20px 10px 5px;
+  margin: 8px 0;
+  cursor: pointer;
 }
-.form label{
+.title2 {
+  margin-bottom: 20px;
+  width: 90%;
 }
-.form textarea {
-	margin-bottom: 5px;
-	margin-top: 5px;
-	height: 120px;
-	padding: 10px;
+.textwelcome{
+  float: left;
+  width: 50%;
+  margin-top: 40px;
+  color:white;
+  align-content: center;
+  display: block;
+  padding: 31px;
+  text-shadow:0 0 1px transparent;
+  height: 465px;
 }
 .form button{
 	margin-bottom: 5px;
 	margin-top: 5px;
 	padding: 20px;
 	background-color: white;
-	color: black;
+  color: black;
 }
-.form_parcellist_user{
-	color: black;
+.title1 {
+  font-size: 52px;
+  font-weight: bold;
+  margin-top: 50px;
 }
-.login_form {
-	margin-bottom: 200px;
-	margin-top: 100px;
+.p1 {
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 600;
+  max-width: 715px;
+  margin: 0 auto 51px;
 }
-.btn a{
-	color: black!important;
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  padding: 0 55px;
+  margin: 0 11px;
 }
-.login_form img{
-	display: block;
-	margin: 0 auto;
+.btn-green {
+  background-color: #83c129;
+  box-shadow: 0 4px 0 #518719;
 }
-.u-left{
-	background: #b0b0b0;
-	width: 45%;
-	float:left;
+.footer {
+  padding: 75px 0;
+  margin-top: -10px;
 }
-
-.u-left img {
-	border-radius: 50%;
+.middle{
+  background: #aeb6c5;
+  background-size: cover;
 }
-.user button {
-	width: 80%;
-	margin: 10px 10%;
+.main1{
+  float: right;
+  width: 50%;
 }
-.u-right{
-	background: red;
-	width: 55%;
-	float: left;
-}
-
-.address {
-	background: white;
-	padding: 10px;
-}
-
-.preference {
-	background: white;
-	padding: 10px;
-}
-
-.delivered {
-	width: 46%;
-	float: left;
-	margin-right: 5%;
-	background: white;
-	padding: 2%;
-}
-
-.undelivered {
-	width: 41%;
-	float: left;
-	background: white;
-	padding: 2%;
-}
-@media (max-width: 500px) {
-	
+.main2{
+  width: 50%;
+  float:right;
+  align-content: center;
+  padding: 50px;
 }

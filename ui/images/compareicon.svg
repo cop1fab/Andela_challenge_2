@@ -1,0 +1,25 @@
+<svg width="110" height="102" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+ <title>Compare Icon</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="104" width="112" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke-linejoin="round" stroke-linecap="round" fill-rule="evenodd" fill="none" id="Homepage-hybrid">
+   <g stroke-width="3" id="Pricing-List-2-Copy-2">
+    <g id="Compare-Icon">
+     <g id="Page-1-Copy-10">
+      <path stroke="#15537D" id="Stroke-1" d="m19.155182,83.392944c0,9.354126 7.596649,16.938171 16.966278,16.938171l38.70433,0c9.369644,0 16.966293,-7.584045 16.966293,-16.938171l0,-59.387207l-64.153763,0c-4.684814,0 -8.483139,-3.792114 -8.483139,-8.469116l0,67.856323z"/>
+      <path stroke="#15537D" id="Stroke-3" d="m19.155182,16.065308c0,-4.677124 3.798325,-8.469116 8.483139,-8.469116l54.966522,-5.441406l0,20.437988"/>
+      <path stroke="#F5A623" id="Stroke-1" d="m63.837128,44.13501c6.583221,6.572388 6.583221,17.228271 0,23.800537c-6.582214,6.571289 -17.255753,6.571289 -23.838974,0c-6.582214,-6.572266 -6.582214,-17.228149 0,-23.800537c6.583221,-6.571167 17.25676,-6.571167 23.838974,0z"/>
+      <path stroke="#F5A623" id="Stroke-3" d="m63.837128,67.935181l12.209244,12.188354"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,240 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+div{
+min-height:100%;
+
+}
+	.mainc {
+	background: #92f799;	
+}
+.top {
+	padding: 10px;
+}
+.top ul {
+	float: right;
+	margin-right: 30px;
+}
+.top li {
+	display: inline-block;
+	list-style: none;
+	padding: 0 20px;
+}
+
+.top a {
+	text-decoration: none;
+	color:white;
+}
+.green{
+	background: green;
+}
+.full {
+	width:100%;
+}
+
+.half {
+	float: left;
+	width: 50%;
+	color: white;
+}
+.bg{
+	background: #000;
+	opacity: .9;
+	margin-top: 80px;
+	padding: 10px;
+}
+.half p {
+	font-size: 1.5em;
+	padding: 30px;
+	width: 450px;
+
+}
+
+.half input {
+	width: 90%;
+}
+
+.full textarea {
+	width: 100%
+}
+
+.full input[type ='submit'] {
+	width: initial;
+	display: block;
+	margin: 10px auto;
+}
+.quarter {
+	width: 25%;
+	float: left;
+}
+
+.quarter h4 {
+	padding-left: 40px;
+}
+
+.quarter p {
+	padding-left: 30px;
+}
+
+.quarter input {
+	width: 200px;
+}
+.padding {
+	padding: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+.top {
+	/* background: #000;
+	opacity: .7; */
+	background-image: url(../images/Radisson-Blue-Kigali.jpg);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+		background-position: 0%;
+}
+.form {
+	padding: 30px;
+	background: #000;
+	border-radius: 5px;
+	margin: 30px;
+	opacity: .9;
+	color:white;
+}
+.form h4 {
+	text-align: center;
+}
+.form input {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	background-color: white;
+}
+.form label{
+}
+.form textarea {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	height: 120px;
+	padding: 10px;
+}
+.form button{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 20px;
+	background-color: white;
+	color: black;
+}
+.form_parcellist_user{
+	color: black;
+}
+.login_form {
+	margin-bottom: 200px;
+	margin-top: 100px;
+}
+.btn a{
+	color: black!important;
+}
+.login_form img{
+	display: block;
+	margin: 0 auto;
+}
+.u-left{
+	background: #b0b0b0;
+	width: 45%;
+	float:left;
+}
+
+.u-left img {
+	border-radius: 50%;
+}
+.user button {
+	width: 80%;
+	margin: 10px 10%;
+}
+.u-right{
+	background: red;
+	width: 55%;
+	float: left;
+}
+
+.address {
+	background: white;
+	padding: 10px;
+}
+
+.preference {
+	background: white;
+	padding: 10px;
+}
+
+.delivered {
+	width: 46%;
+	float: left;
+	margin-right: 5%;
+	background: white;
+	padding: 2%;
+}
+
+.undelivered {
+	width: 41%;
+	float: left;
+	background: white;
+	padding: 2%;
+}
+@media (max-width: 500px) {
+	
+}
+  </style>
+  <script>
+  function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+  </script>
+</head>
+<body>
+    <div class="half">
+        <div class="form">
+          <h4>Place your parcel order</h4>
+          <form>
+            <div>
+              <div class="half">
+                  <label>Location:</label>
+                <input type="text" value="Kigali"><br>
+              </div>
+              <div class="half">
+                  <label>Destination:</label>
+                <input type="text" value="Huye"><br>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div>
+              <div class="half">
+                  <label>Weight:</label>
+                <input type="number" value="3.5Lbs"><br>
+              </div>
+              <div class="half">
+                  <label>Date:</label>
+                <input type="date" value="Nov 2, 2018"><br>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="full">
+                <label>Describe your order</label>
+              <textarea placeholder="A box of glass to be handled with care"></textarea>
+              <button name="submit">SEND IT</button>
+            </div>
+          </form>
+</body>
+</html>
