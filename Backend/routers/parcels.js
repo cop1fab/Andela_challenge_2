@@ -9,7 +9,7 @@ import allParcels, {
 const parcelsRouters = Router();
 
 parcelsRouters.get('/parcels', (req, res) => {
-  console.log(allParcels);
+  // console.log(allParcels);
   res.status(200).json(allParcels);
 });
 
