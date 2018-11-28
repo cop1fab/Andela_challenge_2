@@ -4,3 +4,4 @@ spec
 .nyc_output
 index.js
 Procfile
+.env
