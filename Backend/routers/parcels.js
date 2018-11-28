@@ -1,13 +1,15 @@
 import { Router } from 'express';
-import allParcels, { getParcelById, postParcels, cancelParcelsById } from '../models/datastructure';
+import allParcels, {
+  getParcelById,
+  postParcels,
+  cancelParcelsById,
+  getParcelsByUserId,
+} from '../models/datastructure';
 
 const parcelsRouters = Router();
 
-// parcelsRouters.get('/hello', (req, res) =>{
-//   res.json({messg:'hello world'});
-// });
-
 parcelsRouters.get('/parcels', (req, res) => {
+  console.log(allParcels);
   res.status(200).json(allParcels);
 });
 
@@ -28,6 +30,15 @@ parcelsRouters.post('/parcels/', (req, res) => {
 parcelsRouters.put('/parcels/:parcelId/cancel', (req, res) => {
   const tempIndex = cancelParcelsById(Number.parseInt(req.params.parcelId, 10));
   res.status(200).json(tempIndex);
+});
+
+parcelsRouters.get('/users/:userId/parcels', (req, res) => {
+  const tempParcels = getParcelsByUserId(Number.parseInt(req.params.userId, 10));
+  if (!tempParcels.length) {
+    res.status(400).send('No user registered');
+  } else {
+    res.status(200).send(tempParcels);
+  }
 });
 
 export default parcelsRouters;
