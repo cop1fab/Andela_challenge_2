@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import allParcels, { getParcelById } from '../models/datastructure';
+import allParcels, { getParcelById, postParcels, cancelParcelsById } from '../models/datastructure';
 
 const parcelsRouters = Router();
 
@@ -18,6 +18,16 @@ parcelsRouters.get('/parcels/:parcelId', (req, res) => {
   } else {
     res.status(200).json(temParcel);
   }
+});
+
+parcelsRouters.post('/parcels/', (req, res) => {
+  const createParcel = postParcels(req.body);
+  res.status(200).json(createParcel);
+});
+
+parcelsRouters.put('/parcels/:parcelId/cancel', (req, res) => {
+  const tempIndex = cancelParcelsById(Number.parseInt(req.params.parcelId, 10));
+  res.status(200).json(tempIndex);
 });
 
 export default parcelsRouters;

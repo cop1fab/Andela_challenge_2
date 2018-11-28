@@ -20,20 +20,26 @@ const getParcelsByUserId = (userId) => {
 };
 
 const cancelParcelsById = (parcelId) => {
-  let tempIndex;
+  let parcel;
   allParcels.forEach((value, index) => {
     if (value.ParcelId === parcelId) {
-      tempIndex = index;
+      parcel = allParcels[index];
     }
   });
-  allParcels.splice(tempIndex, 1);
-  return allParcels;
+  if (parcel.status) {
+    parcel.status = 'canceled';
+    return parcel;
+  }
+  return 'Parcel not found!';
 };
 
 const uniqueId = () => uuid.v4();
 
 const postParcels = (body) => {
-  const newParcel = { ...body, ParcelId: allParcels.length };
+  const newParcel = {
+    ...body,
+    ParcelId: allParcels.length,
+  };
   allParcels.push(newParcel);
   return allParcels;
 };
