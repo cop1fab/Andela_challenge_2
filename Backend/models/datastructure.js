@@ -1,6 +1,6 @@
-import uuid from 'uuid';
+// import uuid from 'uuid';
 
-import allParcels from './data.json';
+import allParcels from './data';
 
 
 const getParcelById = (parcelId) => {
@@ -33,7 +33,7 @@ const cancelParcelsById = (parcelId) => {
   return 'Parcel not found!';
 };
 
-const uniqueId = () => uuid.v4();
+// const uniqueId = () => uuid.v4();
 
 const postParcels = (body) => {
   const newParcel = {
