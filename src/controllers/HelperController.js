@@ -1,4 +1,4 @@
-/* Code modified from a file obtained from https://github.com/olawalejarvis/reflection_app_server */
+/* Followed the logic of a tutorial on mentor.io */
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 

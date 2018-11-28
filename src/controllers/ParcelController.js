@@ -1,4 +1,4 @@
-// * Code modified from a file obtained from https://github.com/olawalejarvis/reflection_app_server */
+// * Followed the logic of a tutorial on mentor.io */
 import moment from 'moment';
 import uuidv4 from 'uuid/v4';
 import db from '../database';

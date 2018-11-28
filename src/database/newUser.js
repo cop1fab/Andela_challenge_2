@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 import db from './index';
 
 const queryText = `CREATE TABLE IF NOT EXISTS
