@@ -1,2 +1,2 @@
-import './createUser';
+import './newUser';
 import './newParcel';
