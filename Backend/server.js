@@ -1,5 +1,6 @@
 import Express from 'express';
 import allParcels from './models/data.json';
+import parcelRouters from './routers/parcels'
 import {
   getParcelById, getParcelsByUserId, cancelParcelsById, postParcels,
 } from './models/datastructure';
@@ -10,21 +11,11 @@ server.use(Express.json());
 const appVersion = '/api/v1';
 
 // Endpoint to get a list of all parcels
-
-server.get(`${appVersion}/parcels`, (req, res) => {
-  res.status(200).json(allParcels);
-});
+server.use('/api/v1', parcelRouters);
 
 // Endpoint to get 1 parcel by parcel id
 
-server.get(`${appVersion}/parcels/:parcelId`, (req, res) => {
-  const temParcel = getParcelById(req.params.parcelId);
-  if (!temParcel) {
-    res.status(204).send();
-  } else {
-    res.status(200).json(temParcel);
-  }
-});
+server.user('/api/v1/parcels/:parcelId');
 
 // Endpoint to get all parcels by user id
 

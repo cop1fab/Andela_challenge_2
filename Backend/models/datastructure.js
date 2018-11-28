@@ -33,7 +33,7 @@ const cancelParcelsById = (parcelId) => {
 const uniqueId = () => uuid.v4();
 
 const postParcels = (body) => {
-  const newParcel = { ...body, ParcelId: uniqueId() };
+  const newParcel = { ...body, ParcelId: allParcels.length };
   allParcels.push(newParcel);
   return allParcels;
 };
