@@ -36,7 +36,7 @@ const Parcels = {
       });
     } catch (error) {
       return res.status(400).send({
-        message: error, status: 400,
+        message: error,
       });
     }
   },

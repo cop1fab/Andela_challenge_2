@@ -1,4 +1,4 @@
-/* Followed the logic from mentor.io */
+/* Followed the logic from mentor.io  https://www.codementor.io/olawalealadeusi896/building-a-simple-api-with-nodejs-expressjs-and-postgresql-db-masuu56t7 */
 import moment from 'moment';
 import uuidv4 from 'uuid/v4';
 import Helper from './HelperController';
