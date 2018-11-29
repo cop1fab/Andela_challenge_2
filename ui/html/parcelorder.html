@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <title>SendIt</title>
+  <link rel="stylesheet" href="../css/order.css">
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon"/>
+</head>
+<body>
+    <form id="parcelform">
+      <header>Submit a parcel delivery order</header>
+      <div class="area">
+        <div class="row">
+          <div class="col2">
+            <input type="text" name="firstname">
+            <label for="fistname">First Name</label>
+          </div>
+          <div class="col2">
+            <input type="text" name="lastname">
+            <label for="lastname">Last Name</label>
+          </div>
+        </div>
+        <div class="area">
+          <div class="row">
+            <div class="col2">
+              <input type="number" name="phone">
+              <label for="phone">Phone number</label>
+            </div>
+            <div class="col2">
+              <input type="number" name="altphone">
+              <label for="altphone">Alternative Phone number</label>
+            </div>
+          </div>
+      <label>Receiver information</label>
+        <div class="row">
+          <div class="col2">
+            <input type="text" name="receiverfirstname">
+            <label for="receiverfistname">First Name</label>
+          </div>
+          <div class="col2">
+            <input type="text" name="receiverlastname">
+            <label for="receiverlastname">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <input type="text" name="receiveraddress" id="receiveraddress">
+          <label for="receiveraddress">Receiver Address</label>
+        </div>
+      <label>Parcel information</label>
+      </div>
+        <div class="row">
+          <div class="col2">
+            <input type="text" name="newfirstname">
+            <label for="newfistname">Location</label>
+          </div>
+          <div class="col2">
+            <input type="text" name="newlastname">
+            <label for="newlastname">Destination</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col2">
+            <input type="number" name="newfirstname">
+            <label for="newfistname">Weight</label>
+          </div>
+          <div class="col2">
+            <input type="date" name="newlastname">
+            <label for="newlastname">Date</label>
+          </div>
+        </div>
+        <div class="row">
+          <input type="text" name="newaddress" id="newaddress">
+          <label for="newaddress">Description</label>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit" class="btn">
+        <a class="login-link" href="#">Home</a>
+      </div>
+    </form>
+   </body>
+    </html>
