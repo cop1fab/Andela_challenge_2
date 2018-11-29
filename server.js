@@ -6,7 +6,7 @@ import userRouter from './src/routes/userRoutes';
 
 dotenv.config();
 const app = express();
-const port = process.env.PORT || 8485;
+const port = process.env.PORT || 8888;
 
 app.use(express.json());
 app.use((req, res, next) => {
@@ -15,7 +15,10 @@ app.use((req, res, next) => {
 
   next();
 });
-app.get('/', (req, res) => res.status(200).send({ message: 'Welcome to home SendIT API', status: 200 }));
+app.get('/', (req, res) => res.status(200).send({
+  message: 'Welcome to home SendIT API',
+  status: 200,
+}));
 
 
 app.use('/api/v1/parcels', parcelRouter);

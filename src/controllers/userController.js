@@ -1,4 +1,4 @@
-/* Followed the logic of a tutorial on mentor.io */
+/* Followed the logic from mentor.io  https://www.codementor.io/olawalealadeusi896/building-a-simple-api-with-nodejs-expressjs-and-postgresql-db-masuu56t7 */
 import moment from 'moment';
 import uuidv4 from 'uuid/v4';
 import Helper from './HelperController';
@@ -34,6 +34,7 @@ const Users = {
       const token = Helper.generateToken(rows[0].id);
       return res.status(200).send({ message: 'Successfully logged in', status: 200, token });
     } catch (error) {
+      // console.log(error.stack);
       return res.status(400).send({ message: error, status: 400 });
     }
   },

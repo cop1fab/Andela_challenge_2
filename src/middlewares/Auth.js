@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
 /* Followed the tutorial on mentor.io */
 import jwt from 'jsonwebtoken';
-import db from '../database';
+import db from '../database/index';
 import Helper from '../controllers/HelperController';
 
 const Auth = {
@@ -9,16 +9,24 @@ const Auth = {
   async verifyToken(req, res, next) {
     const token = req.headers['x-access-token'];
     if (!token) {
-      return res.status(400).send({ message: 'Token is not provided' });
+      return res.status(400).send({
+        message: 'Token is not provided',
+      });
     }
     try {
       const decoded = await jwt.verify(token, process.env.SECRET);
       const text = 'SELECT * FROM users WHERE id = $1';
-      const { rows } = await db.query(text, [decoded.userId]);
+      const {
+        rows,
+      } = await db.query(text, [decoded.userId]);
       if (!rows[0]) {
-        return res.status(400).send({ message: 'The token you provided is invalid' });
+        return res.status(400).send({
+          message: 'The token you provided is invalid',
+        });
       }
-      req.user = { id: decoded.userId };
+      req.user = {
+        id: decoded.userId,
+      };
       next();
     } catch (error) {
       return res.status(400).send(error);
@@ -26,10 +34,16 @@ const Auth = {
   },
   UserValidation(req, res, next) {
     if (Helper.isValidatEmpty(req.body.email, req.body.password)) {
-      return res.status(400).send({ message: 'Email and Password are required', status: 400 });
+      return res.status(400).send({
+        message: 'Email and Password are required',
+        status: 400,
+      });
     }
     if (!Helper.isValidEmail(req.body.email)) {
-      return res.status(400).send({ message: 'Please enter a valid email address', status: 400 });
+      return res.status(400).send({
+        message: 'Please enter a valid email address',
+        status: 400,
+      });
     }
     next();
   },
