@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>user</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+        <link rel="stylesheet" href="../css/order.css">
         <link rel="icon" href="../images/favicon.png" type="image/x-icon"/>
         <style>
           /*START GENERAL CSS FOR BACKEND*/
@@ -14,7 +15,7 @@
           }
           body {
             font-size: 16px;
-            background: #f3f3f3;
+            background: white;
             margin: 1px 0px 0px 0px;
           }
           h1, h2, h3, h4, h5, h6 {
@@ -66,7 +67,7 @@
             padding: 0px 15px;
           }
           .header-section {
-            background: #fff;
+            /* background: #fff; */
             border-bottom: 1px solid rgba(0, 0, 0, .12);
             height: auto;
             padding: 18px 0px;
@@ -253,7 +254,7 @@
           }
           .detail-question {
             font-size: 0.9em;
-            color: #a1a1a1;
+            color: black;
             text-transform: uppercase;
             text-align: right;
             min-width: 110px;
@@ -440,135 +441,81 @@ tr:nth-child(even) {
                       <a href="#" class="menu-item"><i class="fas fa-trophy menu-icon"></i>FAQ</a>
                       <a href="#" class="menu-item"><i class="fas fa-tag menu-icon"></i>Privacy policy</a>
                       <a href="#" class="menu-item"><i class="fas fa-chart-area menu-icon"></i>Terms & conditions</a>
+                      <a href="#" class="menu-item"><i class="fas fa-cog menu-icon"></i>Settings</a>
                     </div>
                   </div>
                 </div>
-                <div class="main">
-                  <div class="main-content">
-                    <div class="main-container user-overview">
-                      <h2>User details</h2>
-                      <div class="user-overview-block">
-                        <div class="user-image-container">
-                          <div class="user-image-subcontainer">
-                            <img src="../images/user.png" class="user-image">
-                          </div>
+
+                <form id="parcelform">
+                    <header>Submit a parcel delivery order</header>
+                    <div class="area">
+                      <div class="row">
+                        <div class="col2">
+                          <input type="text" name="firstname">
+                          <label for="fistname">First Name</label>
                         </div>
-                        <div class="user-details">
-                          <div class="detail-column column-1">
-                            <div class="detail-row username">
-                              <div class="detail-question">Username</div>
-                              <div class="detail-answer">calebug</div>
-                            </div>
-                            <div class="detail-row fullname">
-                              <div class="detail-question">Full Name</div>
-                              <div class="detail-answer">Caleb Bugingo</div>
-                            </div>
-                            <div class="detail-row email">
-                              <div class="detail-question">Email</div>
-                              <div class="detail-answer">caleb@gmail.com</div>
-                            </div>
-                          </div>
+                        <div class="col2">
+                          <input type="text" name="lastname">
+                          <label for="lastname">Last Name</label>
                         </div>
                       </div>
-                      <div class="edit-user-actions">
-                        <div class="button-container">
-                          <button class="make-user-pro">My profile</button>
+                      <div class="area">
+                        <div class="row">
+                          <div class="col2">
+                            <input type="number" name="phone">
+                            <label for="phone">Phone number</label>
+                          </div>
+                          <div class="col2">
+                            <input type="number" name="altphone">
+                            <label for="altphone">Alternative Phone number</label>
+                          </div>
                         </div>
-                        <div class="button-container">
-                          <button class="make-user-troll">My preference</button>
+                    <label>Receiver information</label>
+                      <div class="row">
+                        <div class="col2">
+                          <input type="text" name="receiverfirstname">
+                          <label for="receiverfistname">First Name</label>
                         </div>
-                        <div class="button-container">
-                          <button class="delete">logout</button>
+                        <div class="col2">
+                          <input type="text" name="receiverlastname">
+                          <label for="receiverlastname">Last Name</label>
                         </div>
+                      </div>
+                      <div class="row">
+                        <input type="text" name="receiveraddress" id="receiveraddress">
+                        <label for="receiveraddress">Receiver Address</label>
+                      </div>
+                    <label>Parcel information</label>
+                    </div>
+                      <div class="row">
+                        <div class="col2">
+                          <input type="text" name="newfirstname">
+                          <label for="newfistname">Location</label>
+                        </div>
+                        <div class="col2">
+                          <input type="text" name="newlastname">
+                          <label for="newlastname">Destination</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col2">
+                          <input type="number" name="newfirstname">
+                          <label for="newfistname">Weight</label>
+                        </div>
+                        <div class="col2">
+                          <input type="date" name="newlastname">
+                          <label for="newlastname">Date</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <input type="text" name="newaddress" id="newaddress">
+                        <label for="newaddress">Description</label>
                       </div>
                     </div>
-                    <div class="main-container latest-posts">
-                      <h2>All my parcels</h2>
-                      <div class="posts-block">
-                        <div class="single-post image">
-                          <div class="post-details">
-                            <table class="table">
-                                <tr>
-                                  <th>Parcel ID</th>
-                                  <th>Weight</th>
-                                  <th>Status</th>
-                                </tr>
-                                <tr>
-                                  <td>000937889</td>
-                                  <td>350</td>
-                                  <td>Deliverd</td>
-                                </tr>
-                            </table>
-                          </div>
-                          <div class="post-actions">
-                            <div class="button-container">
-                              <button class="edit-post">Edit</button>
-                            </div>
-                            <div class="button-container">
-                              <button class="delete">Cancel</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="posts-block">
-                            <div class="single-post image">
-                              <div class="post-details">
-                                <table class="table">
-                                    <tr>
-                                      <th>Parcel ID</th>
-                                      <th>Weight</th>
-                                      <th>Status</th>
-                                    </tr>
-                                    <tr>
-                                      <td>008497948</td>
-                                      <td>400</td>
-                                      <td>pending</td>
-                                    </tr>
-                                </table>
-                              </div>
-                              <div class="post-actions">
-                                <div class="button-container">
-                                  <button class="edit-post">Edit</button>
-                                </div>
-                                <div class="button-container">
-                                  <button class="delete">Cancel</button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="posts-block">
-                                <div class="single-post image">
-                                  <div class="post-details">
-                                    <table class="table">
-                                        <tr>
-                                          <th>Parcel ID</th>
-                                          <th>Weight</th>
-                                          <th>Status</th>
-                                        </tr>
-                                        <tr>
-                                          <td>000937948</td>
-                                          <td>200</td>
-                                          <td>Deliverd</td>
-                                        </tr>
-                                    </table>
-                                  </div>
-                                  <div class="post-actions">
-                                    <div class="button-container">
-                                      <button class="edit-post">Edit</button>
-                                    </div>
-                                    <div class="button-container">
-                                      <button class="delete">Cancel</button>
-                                    </div>
-                                  </div>
-                                </div>
-
-          <footer>
-            <div class="footer-section">
-              <div class="footer-content">
-                <div class="footer-container msh-power">
-                  <p>Made in Rwanda</p>
-                </div>
-              </div>
-            </div>
-          </footer>
-        </div>
+                    <div class="row">
+                      <input type="submit" value="Submit" class="btn">
+                      <a class="login-link" href="#">Home</a>
+                    </div>
+                  </form>
 </body>
 </html>
