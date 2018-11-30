@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <title>user</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-        <link rel="icon" href="../images/favicon.png" type="image/x-icon"/>
-        <style>
-          /*START GENERAL CSS FOR BACKEND*/
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>user</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+  <style>
+    /*START GENERAL CSS FOR BACKEND*/
           @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css";
           @import url(//fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic);
           * {
@@ -405,183 +406,194 @@
               text-align: left;
               padding: 8px;
           }
+.input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
 
 tr:nth-child(even) {
     background-color: #dddddd;
 }
           /*END CSS FOR EDIT USER PAGE*/
         </style>
-      </head>
-      <body>
-        <div class="backend-root">
-          <header>
-            <div class="header-section">
-              <div class="header-content">
-                <div class="header-container logo">
-                  <img src="../images/logo black.png" class="platform-logo">
-                </div>
-                <div class="header-container header-nav">
-                  <a href="#"><i class="fas fa-question-circle nav-icon"></i></a>
-                  <a href="#"><i class="fas fa-bell nav-icon"></i></a>
-                  <a href="#"><i class="fas fa-user-circle nav-icon"></i></a>
-                </div>
+</head>
+
+<body>
+  <div class="backend-root">
+    <header>
+      <div class="header-section">
+        <div class="header-content">
+          <div class="header-container logo">
+            <img src="../images/logo black.png" class="platform-logo">
+          </div>
+          <div class="header-container header-nav">
+            <a href="#"><i class="fas fa-question-circle nav-icon"></i></a>
+            <a href="#"><i class="fas fa-bell nav-icon"></i></a>
+            <a href="#"><i class="fas fa-user-circle nav-icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body-root">
+      <div class="body-section">
+        <div class="body-content">
+          <div class="sidebar">
+            <div class="sidebar-content">
+              <div class="sidebar-container sidebar-menu">
+                <a href="../html/index.html" class="menu-item"><i class="fas fa-home menu-icon"></i>Home</a>
+                <a href="#" class="menu-item"><i class="fas fa-bolt menu-icon"></i>View all users</a>
+                <a href="#" class="menu-item"><i class="fas fa-folder menu-icon"></i>View all parcels</a>
+                <a href="#" class="menu-item"><i class="fas fa-comments menu-icon"></i>View cancels parcels</a>
+                <a href="#" class="menu-item"><i class="fas fa-trophy menu-icon"></i>FAQ</a>
+                <a href="#" class="menu-item"><i class="fas fa-tag menu-icon"></i>Privacy policy</a>
+                <a href="#" class="menu-item"><i class="fas fa-chart-area menu-icon"></i>Terms & conditions</a>
+                <a href="#" class="menu-item"><i class="fas fa-cog menu-icon"></i>Settings</a>
+                <input type="text" placeholder="Search..">
+
               </div>
             </div>
-          </header>
-          <div class="body-root">
-            <div class="body-section">
-              <div class="body-content">
-                <div class="sidebar">
-                  <div class="sidebar-content">
-                    <div class="sidebar-container sidebar-menu">
-                      <a href="../html/index.html" class="menu-item"><i class="fas fa-home menu-icon"></i>Home</a>
-                      <a href="#" class="menu-item"><i class="fas fa-bolt menu-icon"></i>View all users</a>
-                      <a href="#" class="menu-item"><i class="fas fa-folder menu-icon"></i>View all parcels</a>
-                      <a href="#" class="menu-item"><i class="fas fa-comments menu-icon"></i>View cancels parcels</a>
-                      <a href="#" class="menu-item"><i class="fas fa-trophy menu-icon"></i>FAQ</a>
-                      <a href="#" class="menu-item"><i class="fas fa-tag menu-icon"></i>Privacy policy</a>
-                      <a href="#" class="menu-item"><i class="fas fa-chart-area menu-icon"></i>Terms & conditions</a>
-                      <a href="#" class="menu-item"><i class="fas fa-cog menu-icon"></i>Settings</a>
+          </div>
+          <div class="main">
+            <div class="main-content">
+              <div class="main-container user-overview">
+                <h2>User details</h2>
+                <div class="user-overview-block">
+                  <div class="user-image-container">
+                    <div class="user-image-subcontainer">
+                      <img src="../images/user.png" class="user-image">
+                    </div>
+                  </div>
+                  <div class="user-details">
+                    <div class="detail-column column-1">
+                      <div class="detail-row username">
+                        <div class="detail-question">Username</div>
+                        <div class="detail-answer">admin</div>
+                      </div>
+                      <div class="detail-row fullname">
+                        <div class="detail-question">Full Name</div>
+                        <div class="detail-answer">Copain Fabrice Bienaime</div>
+                      </div>
+                      <div class="detail-row email">
+                        <div class="detail-question">Email</div>
+                        <div class="detail-answer">admin@sendit.rw </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="main">
-                  <div class="main-content">
-                    <div class="main-container user-overview">
-                      <h2>User details</h2>
-                      <div class="user-overview-block">
-                        <div class="user-image-container">
-                          <div class="user-image-subcontainer">
-                            <img src="../images/user.png" class="user-image">
-                          </div>
-                        </div>
-                        <div class="user-details">
-                          <div class="detail-column column-1">
-                            <div class="detail-row username">
-                              <div class="detail-question">Username</div>
-                              <div class="detail-answer">admin</div>
-                            </div>
-                            <div class="detail-row fullname">
-                              <div class="detail-question">Full Name</div>
-                              <div class="detail-answer">Copain Fabrice Bienaime</div>
-                            </div>
-                            <div class="detail-row email">
-                              <div class="detail-question">Email</div>
-                              <div class="detail-answer">admin@sendit.rw </div>
-                            </div>
-                          </div>
-                        </div>
+                <div class="edit-user-actions">
+                  <div class="button-container">
+                    <button class="make-user-pro">My profile</button>
+                  </div>
+                  <div class="button-container">
+                    <button class="make-user-troll">My preference</button>
+                  </div>
+                  <div class="button-container">
+                    <button class="delete">logout</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-container latest-posts">
+                <h2>All parcels</h2>
+                <div class="posts-block">
+                  <div class="single-post image">
+                    <!-- <div class="post-thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/nuq8CSLOzHw/maxresdefault.jpg" class="post-thumbnail">
+                          </div> -->
+                    <div class="post-details">
+                      <!-- <p class="post-type">Image</p> -->
+                      <!-- <p class="post-title">Look what Alejandro and Farshad did today!</p> -->
+                      <table class="table">
+                        <tr>
+                          <th>Parcel ID</th>
+                          <th>User ID</th>
+                          <th>Weight (kg)</th>
+                          <th>Status</th>
+                        </tr>
+                        <tr>
+                          <td>000937889</td>
+                          <td>0034</td>
+                          <td>350</td>
+                          <td>Deliverd</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="post-actions">
+                      <div class="button-container">
+                        <button class="edit-post">Edit</button>
                       </div>
-                      <div class="edit-user-actions">
+                      <div class="button-container">
+                        <button class="delete">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="posts-block">
+                    <div class="single-post image">
+                      <div class="post-details">
+                        <table class="table">
+                          <tr>
+                            <th>Parcel ID</th>
+                            <th>User ID</th>
+                            <th>Weight (kg)</th>
+                            <th>status</th>
+                          </tr>
+                          <tr>
+                            <td>008497948</td>
+                            <td>0078</td>
+                            <td>400</td>
+                            <td>pending</td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="post-actions">
                         <div class="button-container">
-                          <button class="make-user-pro">My profile</button>
+                          <button class="edit-post">Edit</button>
                         </div>
                         <div class="button-container">
-                          <button class="make-user-troll">My preference</button>
-                        </div>
-                        <div class="button-container">
-                          <button class="delete">logout</button>
+                          <button class="delete">Delete</button>
                         </div>
                       </div>
                     </div>
-                    <div class="main-container latest-posts">
-                      <h2>All parcels</h2>
-                      <div class="posts-block">
-                        <div class="single-post image">
-                          <!-- <div class="post-thumbnail-container">
-                            <img src="https://i.ytimg.com/vi/nuq8CSLOzHw/maxresdefault.jpg" class="post-thumbnail">
-                          </div> -->
-                          <div class="post-details">
-                            <!-- <p class="post-type">Image</p> -->
-                            <!-- <p class="post-title">Look what Alejandro and Farshad did today!</p> -->
-                            <table class="table">
-                                <tr>
-                                  <th>Parcel ID</th>
-                                  <th>User ID</th>
-                                  <th>Weight</th>
-                                  <th>Status</th>
-                                </tr>
-                                <tr>
-                                  <td>000937889</td>
-                                  <td>0034</td>
-                                  <td>350</td>
-                                  <td>Deliverd</td>
-                                </tr>
-                            </table>
+                    <div class="posts-block">
+                      <div class="single-post image">
+                        <div class="post-details">
+                          <table class="table">
+                            <tr>
+                              <th>Parcel ID</th>
+                              <th>User ID</th>
+                              <th>Weight (kg)</th>
+                              <th>Status</th>
+                            </tr>
+                            <tr>
+                              <td>000937948</td>
+                              <th>0095</th>
+                              <td>200</td>
+                              <td>Deliverd</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="post-actions">
+                          <div class="button-container">
+                            <button class="edit-post">Edit</button>
                           </div>
-                          <div class="post-actions">
-                            <div class="button-container">
-                              <button class="edit-post">Edit</button>
-                            </div>
-                            <div class="button-container">
-                              <button class="delete">Delete</button>
+                          <div class="button-container">
+                            <button class="delete">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <footer>
+                        <div class="footer-section">
+                          <div class="footer-content">
+                            <div class="footer-container msh-power">
+                              <p>Made in Rwanda</p>
                             </div>
                           </div>
                         </div>
-                        <div class="posts-block">
-                            <div class="single-post image">
-                              <div class="post-details">
-                                <table class="table">
-                                    <tr>
-                                      <th>Parcel ID</th>
-                                      <th>User ID</th>
-                                      <th>Weight</th>
-                                      <th>status</th>
-                                    </tr>
-                                    <tr>
-                                      <td>008497948</td>
-                                      <td>0078</td>
-                                      <td>400</td>
-                                      <td>pending</td>
-                                    </tr>
-                                </table>
-                              </div>
-                              <div class="post-actions">
-                                <div class="button-container">
-                                  <button class="edit-post">Edit</button>
-                                </div>
-                                <div class="button-container">
-                                  <button class="delete">Delete</button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="posts-block">
-                                <div class="single-post image">
-                                  <div class="post-details">
-                                    <table class="table">
-                                        <tr>
-                                          <th>Parcel ID</th>
-                                          <th>User ID</th>
-                                          <th>Weight</th>
-                                          <th>Status</th>
-                                        </tr>
-                                        <tr>
-                                          <td>000937948</td>
-                                          <th>0095</th>
-                                          <td>200</td>
-                                          <td>Deliverd</td>
-                                        </tr>
-                                    </table>
-                                  </div>
-                                  <div class="post-actions">
-                                    <div class="button-container">
-                                      <button class="edit-post">Edit</button>
-                                    </div>
-                                    <div class="button-container">
-                                      <button class="delete">Delete</button>
-                                    </div>
-                                  </div>
-                                </div>
-
-          <footer>
-            <div class="footer-section">
-              <div class="footer-content">
-                <div class="footer-container msh-power">
-                  <p>Made in Rwanda</p>
-                </div>
-              </div>
-            </div>
-          </footer>
-        </div>
+                      </footer>
+                    </div>
 </body>
+
 </html>
