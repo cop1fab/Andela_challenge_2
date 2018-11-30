@@ -6,7 +6,7 @@
   "scripts": {
     "start": "babel-node ./server.js",
     "dev": "NODE_ENV=test nodemon --exec babel-node ./server.js",
-    "test": "nyc mocha --require babel-polyfill --require babel-register --exec babel-node  ../test/tests/ --exit",
+    "test": "nyc mocha --require babel-polyfill --require babel-register --exec babel-node  ./test/tests/ --exit",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "dbset": "babel-node src/database/createTable.js"
   },

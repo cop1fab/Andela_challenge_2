@@ -21,7 +21,7 @@ const Auth = {
       } = await db.query(text, [decoded.userId]);
       if (!rows[0]) {
         return res.status(400).send({
-          message: 'The token you provided is invalid',
+          message: 'Invalid token',
         });
       }
       req.user = {
@@ -35,7 +35,7 @@ const Auth = {
   UserValidation(req, res, next) {
     if (Helper.isValidatEmpty(req.body.email, req.body.password)) {
       return res.status(400).send({
-        message: 'Email and Password are required',
+        message: 'Please provide email & password',
         status: 400,
       });
     }
