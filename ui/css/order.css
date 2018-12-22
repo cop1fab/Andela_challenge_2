@@ -1,0 +1,110 @@
+body {
+  background: #282A2C;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+#parcelform {
+  margin: 50px auto;
+  width: 43%;
+}
+
+header {
+  color: #ffffff;
+  font-size: 1.7em;
+  padding: 3% 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.area {
+  color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  margin: 40px 0;
+  color: white;
+}
+
+label {
+  line-height: 35px;
+  display: table-header-group;
+  font-size: 1.05em;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background: transparent;
+  color: #ffffff;
+  display: table-row-group;
+  transition: all 0.3s ease;
+  font-size: 1.05em;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #69B692;
+}
+
+input:focus + label {
+  color: #69b692;
+}
+
+.row {
+  margin: 20px 0;
+  width: 100%;
+  padding: 0;
+  display: table;
+}
+
+.col2 {
+  display: table;
+  width: 47%;
+  float: left;
+}
+
+.col2:nth-child(2) {
+  float: right;
+  display: table;
+}
+
+.btn {
+  width: 35%;
+  margin-right: 3%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #69B692;
+  border-color: #69B692;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  #myform {
+  margin: 50px auto;
+  width: 80%;
+}
+  .col2 {
+  display: table;
+  width: 100%;
+  float: left;
+}
+  
+  .ckeckarea label {
+  line-height:20px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  #myform {
+  margin: 50px auto;
+  width: 100%;
+}
+ 
+}
